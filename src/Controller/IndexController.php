@@ -14,11 +14,11 @@ class IndexController
         // Connexion à la BDD
         $database = new Database();
         // Requête SQL
-        $query = "SELECT * FROM produit WHERE etat_publication = 1";
+        $query = "SELECT * FROM article";
         // Exécution de la requête SQL et récupération des produits
         $products = $database->query($query, Produit::class);
         // On retourne les produits dans un tableau
-        return compact('products');
+        return compact('article');
     }
 }
 

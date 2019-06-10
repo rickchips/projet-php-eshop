@@ -14,7 +14,7 @@ class RegisterController
 if ($_SERVER['REQUEST_METHOD'] === 'POST')
 {
 
-$errorMessageUsername = FormValidator::checkPostText('username', 128);
+$errorMessageUsername = FormValidator::checkPostText('name', 128);
 $errorMessageEmail = FormValidator::checkPostText('email', 255);
 $errorMessagePassword = FormValidator::checkPostText('password', 128);
 

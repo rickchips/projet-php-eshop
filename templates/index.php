@@ -3,21 +3,33 @@
 
 use src\Controller\IndexController;
 
-require 'inc/header.php';
-
 
 // On récupère notre contrôleur
 $controller = new IndexController();
-
+// On récupère les données de l'index
+$datas = $controller->index();
+// On extrait les données pour pouvoir les utiliser en tant que variables
+extract($datas);
 
 
 ?>
 
 <main class="container">
-    <section>
-    <h1>Présentation des produits</h1>
-
+    <h1 class="mt-2">Collection</h1>
+    <section class="row">
+        <?php foreach ($article as $product) : ?>
+            <div class="col-4">
+                <div class="card">
+                    <img src="/img/uploads/<?= $product->getImageName(); ?>" class="card-img-top"
+                         alt="Image de <?= $product->getName() ?>">
+                    <div class="card-body">
+                        <h5 class="card-title"><?= $product->getName(); ?></h5>
+                        <p class="card-text"><?= $product->getShortDescription(); ?></p>
+                        <a href="#" class="card-link btn btn-outline-info">Détail</a>
+                    </div>
+                </div>
+            </div>
+        <?php endforeach; ?>
     </section>
 </main>
-
 <?php require 'inc/footer.php'; ?>
