@@ -6,7 +6,9 @@ use src\Utilities\Router;
 $router = new Router();
 $router->addRoute('/', 'index.php');
 $router->addRoute('', 'index.php');
-$router->addRoute('/admin', 'admin.php');
+$router->addRoute('/femme', 'femme.php');
+$router->addRoute('/homme', 'homme.php');
+$router->addRoute('/accessoires', 'accessoires.php');
 // On souhaite récupérer le fichier à exécuter
 $template = $router->match();
 if(is_null($template)) {

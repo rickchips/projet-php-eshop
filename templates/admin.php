@@ -27,21 +27,21 @@ require 'inc/header.php';
                 <label for="nom">Nom</label>
                 <input type="text"
                        class="form-control"
-                       id="nom" name="nom" value="<?= $_POST['nom'] ?? '' ?>">
+                       id="nom" name="nom" value="">
                 <div class="invalid-feedback"></div>
             </div>
             <div class="form-group">
                 <label for="description">Description</label>
                 <input type="text"
                        class="form-control"
-                       id="description" name=description" value="<?= $_POST['description'] ?? '' ?>">
+                       id="description" name=description" value="">
                 <div class="invalid-feedback"></div>
             </div>
             <div class="form-group">
                 <label for="prix">Prix</label>
                 <input type="text"
                        class="form-control"
-                       id="prix" name="prix" value="<?= $_POST['prix'] ?? '' ?>">
+                       id="prix" name="prix" value="">
                 <div class="invalid-feedback"></div>
             </div>
 

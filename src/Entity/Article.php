@@ -7,10 +7,10 @@ class Article
 {
 
     private $id;
-    private $nom;
-    private $description;
-    private $price;
-    private $imageName;
+    private $nom_article;
+    private $description_article;
+    private $prix_article;
+    private $image_name;
 
     /**
      * @return mixed
@@ -33,72 +33,64 @@ class Article
      */
     public function getNom()
     {
-        return $this->name;
+        return $this->nom_article;
     }
 
     /**
      * @param mixed $nom
      */
-    public function setNom($nom)
+    public function setNom($nom_article)
     {
-        $this->nom = $nom;
+        $this->nom_article = $nom_article;
     }
 
     /**
      * @return mixed
      */
-    public function getDescription()
+    public function getDescription_Article()
     {
-        return $this->description;
+        return $this->description_article;
     }
 
     /**
      * @param mixed $description
      */
-    public function setDescription($description)
+    public function setDescription_Article($description_article)
     {
-        $this->description = $description;
+        $this->description_article = $description_article;
     }
 
     /**
      * @return mixed
      */
-    public function getPrice()
+    public function getPrix_Article()
     {
-        return $this->price;
+        return $this->prix_article;
     }
 
     /**
-     * @param mixed $price
+     * @param mixed $prix_article
      */
-    public function setPrice($price)
+    public function setPrix_Article($prix_article)
     {
-        $this->price = $price;
+        $this->prix_article = $prix_article;
     }
 
-
-    /**
-     * @param mixed $taille
-     */
-    public function setTaille($taille)
-    {
-        $this->taille = $taille;
-    }
 
     /**
      * @return mixed
      */
-    public function getImageName()
+    public function getImage_Name()
     {
-        return $this->imageName ?? $this->image_name ?? '';
+        return $this->image_name ?? $this->image_name ?? '';
     }
 
     /**
      * @param mixed $imageName
      */
-    public function setImageName($imageName)
+    public function setImage_Name($image_name)
     {
-        $this->imageName = $imageName;
+        $this->image_name = $image_name;
     }
 
 
