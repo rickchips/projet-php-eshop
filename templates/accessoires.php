@@ -1,7 +1,5 @@
 <?php
 require 'inc/header.php';
-
-
 use src\Controller\AccessoiresController;
 
 

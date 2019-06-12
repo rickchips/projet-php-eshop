@@ -1,6 +1,6 @@
 <?php
+session_start();
 require 'inc/header.php';
-
 
 use src\Controller\FemmeController;
 
@@ -11,7 +11,6 @@ $controller = new FemmeController();
 $datas = $controller->femme();
 // On extrait les données pour pouvoir les utiliser en tant que variables
 extract($datas);
-
 
 ?>
 

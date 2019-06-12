@@ -1,10 +1,7 @@
 <?php
+session_start();
 require 'inc/header.php';
-
-
 use src\Controller\IndexController;
-
-
 // On récupère notre contrôleur
 $controller = new IndexController();
 // On récupère les données de l'index
@@ -17,6 +14,8 @@ extract($datas);
 
 
 <main class="container">
+
+
     <h1 class="mt-2">Collection</h1>
     <section class="row">
         <?php foreach ($articles as $article) : ?>

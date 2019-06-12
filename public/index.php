@@ -9,6 +9,7 @@ $router->addRoute('', 'index.php');
 $router->addRoute('/femme', 'femme.php');
 $router->addRoute('/homme', 'homme.php');
 $router->addRoute('/accessoires', 'accessoires.php');
+$router->addRoute('/inscription', 'inscription.php');
 // On souhaite récupérer le fichier à exécuter
 $template = $router->match();
 if(is_null($template)) {

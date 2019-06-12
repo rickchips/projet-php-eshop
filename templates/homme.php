@@ -1,5 +1,7 @@
 <?php
+session_start();
 require 'inc/header.php';
+
 
 
 use src\Controller\HommeController;

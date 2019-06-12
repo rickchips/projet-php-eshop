@@ -80,14 +80,8 @@ class FormValidator
         return $message ?? "";
     }
 
-    public static function sanitizeRadio(string $key): void
-    {
-        if (!array_key_exists($key, $_POST)) {
-            $_POST[$key] = false;
-        } else {
-            $_POST[$key] = true;
-        }
-    }
+
+
 
 }
 
